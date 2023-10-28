@@ -53,7 +53,7 @@ st.markdown('### Projects')
 ########################
 
 # Ler tabelas projetos #
-df = pd.read_excel(path + '/projetos.xlsx')
+df = pd.read_csv(path + '/projetos.csv')
 df = df.sort_values(by='Ordem')
 ########################
 
