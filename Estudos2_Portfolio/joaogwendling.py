@@ -54,7 +54,7 @@ st.markdown('### Projects')
 ########################
 
 # Ler tabelas projetos #
-df = pd.read_csv(path + '/projetos.csv', sep=';')
+df = pd.read_csv(path + '/projects.csv', sep=';')
 df = df.sort_values(by='Ordem')
 ########################
 
