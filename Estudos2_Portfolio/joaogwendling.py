@@ -7,6 +7,10 @@ import openpyxl
 
 path = '/mount/src/streamlit_portfolio/Estudos2_Portfolio'
 
+st.set_page_config(
+        page_title="João Wendling - Portfolio",
+)
+
 # CSS - Estilos #######
 def local_css(file_name):
     with open(file_name) as f:
