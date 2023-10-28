@@ -2,8 +2,11 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 from PIL import Image
+import os
 
 path = os.path.dirname(__file__)
+
+st.write(path)
 
 # CSS - Estilos #######
 def local_css(file_name):
