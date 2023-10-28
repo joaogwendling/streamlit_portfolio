@@ -6,7 +6,10 @@ import os
 
 path = os.path.dirname(__file__)
 
-st.write(path)
+class MyException(Exception):
+    pass
+
+raise MyException(f"Erro encontrado, path = {path}")
 
 # CSS - Estilos #######
 def local_css(file_name):
