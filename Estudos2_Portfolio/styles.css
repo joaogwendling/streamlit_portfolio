@@ -1,0 +1,22 @@
+.css-1y4p8pa {
+    padding: 4rem 0rem 0rem;
+}
+
+img {
+    align-self: center;
+}
+
+div[data-testid="stImage"] img {
+    max-width:90%;
+}
+
+
+div[data-testid="stExpander"] div[role="button"] p {
+    font-size: 2rem;
+}
+
+.block-container {
+    max-width: 90%;
+    }
+
+
