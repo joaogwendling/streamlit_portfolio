@@ -27,13 +27,13 @@ def open_page(url):
 
 # Sidebar #############
 with st.sidebar:
-   st.image(Image.open('img/eu.jpg'), width=200)
+   st.image(Image.open(path + '/img/eu.jpg'), width=200)
    st.markdown('### João Gabriel Wendling Alves')
    st.markdown('![Linkedin](https://i.stack.imgur.com/gVE0j.png) LinkedIn: [linkedin.com/in/joaowendling](https://www.linkedin.com/in/joaowendling/)')
    st.markdown(':email: E-mail: [joaogabriel.alves11@gmail.com](mailto:joaogabriel.alves11@gmail.com)')
    st.markdown(':telephone_receiver: +55 (51) 99357-0403')
 
-   with open('CV_JoaoGabrielWendlingAlves.pdf', "rb") as pdf_file:
+   with open(path + '/CV_JoaoGabrielWendlingAlves.pdf', "rb") as pdf_file:
         PDFbyte = pdf_file.read()
         st.download_button('Download CV', PDFbyte, file_name="CV_JoaoGabrielWendlingAlves.pdf",  mime='application/octet-stream')
 #######################
@@ -53,7 +53,7 @@ st.markdown('### Projects')
 ########################
 
 # Ler tabelas projetos #
-df = pd.read_excel('projetos.xlsx')
+df = pd.read_excel(path + '/projetos.xlsx')
 df = df.sort_values(by='Ordem')
 ########################
 
@@ -125,7 +125,7 @@ for i,coluna in enumerate(colunas):
         df = dfs[i]
         for j, row in df.iterrows():
             with st.expander('**' + row['Título'] + '**', expanded=True):
-                st.image(Image.open(row['Imagem']), use_column_width=True)
+                st.image(Image.open(path + '/' + row['Imagem']), use_column_width=True)
                 st.markdown(row['Descrição'])
               #  if row['EscritoBotao'] != 'n':
               #      st.button(row['EscritoBotao'], key=j, on_click=open_page, args=(row['LinkBotao'],), kwargs=None, disabled=False)
