@@ -3,12 +3,14 @@ import pandas as pd
 import numpy as np
 from PIL import Image
 
+path = os.path.dirname(__file__)
+
 # CSS - Estilos #######
 def local_css(file_name):
     with open(file_name) as f:
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
-local_css('../styles.css')
+local_css(path + '/styles.css')
 #######################
 
 # Botão URL #######
