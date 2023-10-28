@@ -9,7 +9,7 @@ path = os.path.dirname(__file__)
 class MyException(Exception):
     pass
 
-raise MyException(f"Erro encontrado, path = {path}")
+raise MyException(path)
 
 # CSS - Estilos #######
 def local_css(file_name):
