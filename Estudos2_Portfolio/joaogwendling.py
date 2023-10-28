@@ -3,6 +3,7 @@ import pandas as pd
 import numpy as np
 from PIL import Image
 import os
+import openpyxl
 
 path = '/mount/src/streamlit_portfolio/Estudos2_Portfolio'
 
@@ -53,7 +54,7 @@ st.markdown('### Projects')
 ########################
 
 # Ler tabelas projetos #
-df = pd.read_csv(path + '/projetos.csv')
+df = pd.read_csv(path + '/projetos.csv', sep=';')
 df = df.sort_values(by='Ordem')
 ########################
 
