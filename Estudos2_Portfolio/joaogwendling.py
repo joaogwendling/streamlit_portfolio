@@ -6,8 +6,6 @@ import os
 
 path = '/mount/src/streamlit_portfolio/Estudos2_Portfolio'
 
-raise MyException(path)
-
 # CSS - Estilos #######
 def local_css(file_name):
     with open(file_name) as f:
