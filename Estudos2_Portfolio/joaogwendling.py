@@ -4,10 +4,7 @@ import numpy as np
 from PIL import Image
 import os
 
-path = os.path.dirname(__file__)
-
-class MyException(Exception):
-    pass
+path = '/mount/src/streamlit_portfolio/Estudos2_Portfolio'
 
 raise MyException(path)
 
