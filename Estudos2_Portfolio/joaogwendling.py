@@ -5,7 +5,7 @@ from PIL import Image
 import os
 import openpyxl
 
-path = '/app/streamlit_portfolio/Estudos2_Portfolio'
+path = '/mount/src/streamlit_portfolio/Estudos2_Portfolio'
 
 st.set_page_config(
         page_title="João Wendling - Portfolio",
