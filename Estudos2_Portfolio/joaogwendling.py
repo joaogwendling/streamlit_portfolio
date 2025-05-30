@@ -130,7 +130,7 @@ for i,coluna in enumerate(colunas):
         df = dfs[i]
         for j, row in df.iterrows():
             with st.expander('**' + row['Título'] + '**', expanded=True):
-                st.image(Image.open(path + '/' + row['Imagem']), use_column_width=True)
+                st.image(Image.open(path + '/' + row['Imagem']), use_container_width=True)
                 st.markdown(row['Descrição'])
               #  if row['EscritoBotao'] != 'n':
               #      st.button(row['EscritoBotao'], key=j, on_click=open_page, args=(row['LinkBotao'],), kwargs=None, disabled=False)
