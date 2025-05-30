@@ -34,7 +34,7 @@ def open_page(url):
 with st.sidebar:
    st.image(Image.open(path + '/img/eu.jpg'), width=200)
    st.markdown('### João Gabriel Wendling Alves')
-   st.markdown('![Linkedin](https://i.stack.imgur.com/gVE0j.png) LinkedIn: [linkedin.com/in/joaowendling](https://www.linkedin.com/in/joaowendling/)')
+   st.markdown('LinkedIn: [linkedin.com/in/joaowendling](https://www.linkedin.com/in/joaowendling/)')
    st.markdown(':email: E-mail: [joaogabriel.alves11@gmail.com](mailto:joaogabriel.alves11@gmail.com)')
    st.markdown(':telephone_receiver: +55 (51) 99357-0403')
 
@@ -49,10 +49,10 @@ st.markdown('# João Wendling')
 st.markdown('Data Analyst and Industrial Engineer. ')
 
 st.markdown('### Summary')
-st.markdown(''':chart_with_upwards_trend: Work experience in Data Analytics and Business Intelligence projects, automating, collecting, cleaning, exploring, analyzing, and visualizing data using tools such as `SQL`, `Power BI`, `Python` and `Excel`.''')
-st.markdown(''':brain: Passionate about using data as a decision-making and problem-solving tool. I am curious, collaborative and result oriented. ''')          
+st.markdown(''':chart_with_upwards_trend: Work experience in Data Analytics and Business Intelligence projects, automating, collecting, cleaning, exploring, analyzing, and visualizing data using tools such as `SQL`, `Python`, `dbt`, `Power BI` and `Excel`''')
+st.markdown(''':earth_americas: Brazilian working remotely as a contractor ''')          
 st.markdown(''':mortar_board: Degree in Industrial Engineering''')
-st.markdown(''':beginner: Certifications: Power BI Data Analyst Associate (Microsoft) and C1 English (Cambridge CAE)''')
+st.markdown(''':beginner: Certifications: dbt Fundamentals (dbt Labs), Power BI Data Analyst Associate (Microsoft) and C1 English (Cambridge CAE)''')
 
 st.markdown('### Projects')
 ########################
